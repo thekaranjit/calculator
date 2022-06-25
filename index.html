@@ -6,9 +6,68 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
       <script type="text/javascript" language="javascript" src="script.js"></script>
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
+
+    <h1 class="heading">Simple Calculator</h1>
+
+    <div id="flexContainer">
+
+        <table class="table table-borderless" >
+
+          <tr>
+
+            <td colspan="3"><input type="text" id ="result" class="form-control" aria-label="Small input group" aria-describedby="input-group-sm"></td>
+            <td><input type ="button" class="btn btn-danger" value="c" onclick="clr()"/></td>
+          </tr>
+
+          <tr>
+            <td><input type="button"  class="btn btn-danger" value="1" onclick="dis('1')"/></td>
+            <td><input type="button" class="btn btn-danger" value="2" onclick="dis('2')"/></td>
+            <td><input type="button" class="btn btn-danger" value="3" onclick="dis('3')"/></td>
+            <td><input type="button" class="btn btn-danger" value="/" onclick="dis('/')"/></td>
+          </tr>
+
+
+          <tr>
+            <td><input type="button" class="btn btn-danger" value="4" onclick="dis('4')"/></td>
+            <td><input type="button" class="btn btn-danger" value="5" onclick="dis('5')"/></td>
+            <td><input type="button" class="btn btn-danger" value="6" onclick="dis('6')"/></td>
+            <td><input type="button" class="btn btn-danger" value="-" onclick="dis('-')"/></td>
+          </tr>
+
+
+          <tr>
+            <td><input type="button" class="btn btn-danger" value="7" onclick="dis('7')"/></td>
+            <td><input type="button" class="btn btn-danger" value="8" onclick="dis('8')"/></td>
+            <td><input type="button" class="btn btn-danger" value="9" onclick="dis('9')"/></td>
+            <td><input type="button" class="btn btn-danger" value="+" onclick="dis('+')"/></td>
+          </tr>
+
+          <tr>
+            <td><input type="button" class="btn btn-danger" value="." onclick="dis('.')"/></td>
+            <td><input type="button" class="btn btn-danger" value="0" onclick="dis('0')"/></td>
+
+            <td><input type="button" class="btn btn-danger" value="=" onclick="solve()"/></td>
+            <td><input type="button" class="btn btn-danger" value="*" onclick="dis('*')"/></td>
+          </tr>
+
+
+
+        </table>
+
+
+    </div>
+
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Simple Calculator created by @thekaranjit</h5>
+        <p class="card-text">Checkout my other projects...</p>
+        <a href="https://github.com/thekaranjit" class="btn btn-primary">Chekout</a>
+      </div>
+
 
   </body>
 </html>
